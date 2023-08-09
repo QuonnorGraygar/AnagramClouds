@@ -1,10 +1,10 @@
 # Anagram Cloud Creator Notebook
 
-The following repository contains a notebook `Anagram_Cloud.ipynb`, which is used to make anagram clouds. Anagram clouds are variations on word clouds emphasize words in a visual display using a metric other than frequency. In order to make your own anagram clouds, you must prepare a dataframe that has the following two columns:
-- `text`: the words that make up a single data point of the word cloud.
-- `example`: the binary label of whether the data point does or doesn't display traits of a given theme. The word example is used here as a placeholder and can be swapped out in the notebook at the user's discretion.
+The following repository contains a notebook `Anagram_Cloud.ipynb`, which is used to make anagram clouds. Anagram clouds are variations on word clouds that emphasize words in a visual display using a metric other than frequency. In order to make your own anagram clouds, you must prepare a dataframe that has the following two columns:
+- `text`: the words that make up a single text entry for the data set.
+- `theme`: the binary label of whether the data point does or doesn't display traits of a given theme. The word theme is used here as a placeholder and should be swapped out with whatever appropriate column label is used during the creation of the anagram cloud.
 
-Within the notebook, there is a placeholder example that shows the differences between a word cloud and an anagram cloud. The example found within `ladded_example.csv` deals with students answering a question relating to the change in a ladder's slope as its height is adjusted to be twice its initial value. Certain students answering this question exhibit clear 'math variable relationship' skills based on the way that they describe their answer. We isolate these students and then generate both a word cloud and an anagram cloud from their corpus of text responses. The two included `.png` files show the resulting clouds made from each method.
+Within the notebook, there is a placeholder example that shows the differences between a word cloud and an anagram cloud. The example found within `pos_exp.csv` deals with people communicating a recent positive experience that they were willing to share. These positive experiences are categorized into one of seven labels. By selecting one of the labels, we can construct either a word or an anagram cloud that visualizes the key terms used by people who exhibit that label. The second example `title_topic.csv` labels academic paper titles with a field of study. Unlike the first example set, text entries in this set may exhibit multiple labels simultaneously. The `.png` files in the two folders `word_cloud` and `anagram_cloud` show the resulting clouds made from each respective method.
 
 Visualization provided by this notebook:
 - Scatterplot comparison of frequency values vs. permutation importance scores for feature tokens (both in raw value and ranked integer value)
