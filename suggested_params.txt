@@ -1,0 +1,27 @@
+This text document lists the parameters used when fitting the gradient boosting
+machine models. Said models were then used to generate the permutation importance
+scores that made the anagram clouds.
+
+*** Parameter order: ['learning rate', 'number of estimators', 'sub-sample size', and 'layer depth'] ***
+
+Labels for pos_exp.csv:
+-    'achievement': [0.15, 40, 0.75, 4],
+-    'affection': [0.05, 200, 0.50, 4],
+-    'bonding': [0.05, 360, 0.25, 3],
+-    'enjoy_the_moment': [0.05, 40, 1.00, 4],
+-    'exercise': [0.05, 280, 0.25, 4],
+-    'leisure': [0.05, 200, 0.25, 4],
+-    'nature': [0.25, 200, 0.50, 3]
+
+Labels for title_topic.csv:
+-    'Computer Science': [0.05,200,0.25,5],
+-    'Physics': [0.05,280,0.75,4],
+-    'Mathematics': [0.05,200,0.75,4],
+-    'Statistics': [0.25,120,0.25,4],
+
+Labels for twit_emo.csv: 
+-    'joy' : [0.05, 120, 1.00, 4],
+-    'sadness' : [0.05, 120, 1.00, 3],
+-    'anger' : [0.25, 40, 0.75, 5],
+-    'anticipation' : [0.05, 40, 0.50, 5],
+-    'fear' : [0.05, 200, 1.00, 4]
